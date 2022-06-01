@@ -138,4 +138,8 @@ body {
         padding: 85px 20px 80px 20px;
         border-radius: 0px;
     }
+    .form {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
 }

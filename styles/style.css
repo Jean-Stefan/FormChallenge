@@ -75,3 +75,36 @@ body {
     align-items: center;
     padding-left: 10px;
 }
+
+.group-checkbox .custom-checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.custom-checkbox .checkmark {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #a5a5a5;
+    display: inline-block;
+    border-radius: 2px;
+    background: #ffffff
+        url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/1200px-White_check.svg.png)
+        center/1250% no-repeat;
+}
+
+.custom-checkbox input:checked + .checkmark {
+    background-color: #0dbdbd;
+    border-color: #0dbdbd;
+    background-size: 60%;
+}
+
+.custom-checkbox input {
+    display: none;
+}
+
+.custom-checkbox .terms {
+    margin: 0 5px;
+    display: inline-block;
+}

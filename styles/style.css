@@ -128,3 +128,6 @@ body {
     background: #ffffff;
     border: 2px solid #0dbdbd;
 }
+
+@media (max-width: 650px) {
+}

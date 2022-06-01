@@ -23,6 +23,12 @@ body {
     margin-bottom: 30px;
 }
 
+.form {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 25px;
+}
+
 .form label {
     display: block;
     font-family: 'Nunito';

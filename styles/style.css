@@ -142,4 +142,8 @@ body {
         grid-template-columns: 1fr 1fr;
         gap: 20px;
     }
+    .col-1,
+    .group-checkbox {
+        grid-column: 1/-1;
+    }
 }

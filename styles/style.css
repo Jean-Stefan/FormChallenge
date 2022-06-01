@@ -108,3 +108,23 @@ body {
     margin: 0 5px;
     display: inline-block;
 }
+
+.button-register {
+    grid-column: 2/3;
+    justify-self: flex-end;
+    width: 80px;
+    height: 40px;
+    font-family: 'Nunito';
+    font-size: 16px;
+    color: #ffffff;
+    background: #0dbdbd;
+    border-radius: 10px;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.button-register:active {
+    color: #0dbdbd;
+    background: #ffffff;
+    border: 2px solid #0dbdbd;
+}

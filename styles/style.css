@@ -22,3 +22,21 @@ body {
     font-family: 'Inter';
     margin-bottom: 30px;
 }
+
+.form label {
+    display: block;
+    font-family: 'Nunito';
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.form input {
+    height: 40px;
+    padding: 12px;
+    font-family: 'Nunito';
+    font-size: 18px;
+    border: 2px solid #aaaaaa;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}

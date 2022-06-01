@@ -55,3 +55,7 @@ body {
 .col-1 {
     grid-column: 1/2;
 }
+
+.group-email {
+    margin-bottom: 40px;
+}

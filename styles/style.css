@@ -23,8 +23,6 @@ body {
     background: #ffffff;
     border-radius: 20px;
     box-sizing: border-box;
-    display: flex;
-    justify-content: center;
 }
 
 .main-content,
@@ -166,6 +164,11 @@ body {
     margin-bottom: 160px;
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
 .button-back {
     width: 270px;
     height: 175px;
@@ -221,5 +224,33 @@ body {
         width: 100%;
         height: 55px;
         font-size: 18px;
+    }
+
+    /* Success Screen*/
+
+    .success-title img {
+        margin: 0 auto 35px auto;
+        display: block;
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    .success-title h1 {
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Inter';
+        margin-bottom: 55px;
+    }
+
+    .button-back {
+        width: 100%;
+        height: 75px;
+        font-family: 'Nunito';
+        font-size: 36px;
+        color: #ffffff;
+        background: #0dbdbd;
+        border-radius: 10px;
+        border-color: transparent;
+        cursor: pointer;
     }
 }

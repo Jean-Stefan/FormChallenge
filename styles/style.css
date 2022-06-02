@@ -28,6 +28,8 @@ body {
 .title img {
     margin: 0 auto 15px auto;
     display: block;
+    max-width: 100%;
+    object-fit: cover;
 }
 
 .title h1 {

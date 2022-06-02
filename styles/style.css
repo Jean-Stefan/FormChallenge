@@ -18,6 +18,7 @@ body {
 
 .container {
     max-width: 620px;
+    max-height: 760px;
     padding: 30px 60px 75px 45px;
     background: #ffffff;
     border-radius: 20px;

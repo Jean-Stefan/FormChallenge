@@ -27,7 +27,8 @@ body {
     justify-content: center;
 }
 
-#main-content {
+.main-content,
+.success {
     display: none;
 }
 
@@ -175,6 +176,10 @@ body {
     border-radius: 10px;
     border-color: transparent;
     cursor: pointer;
+}
+
+.active {
+    display: unset;
 }
 
 @media (max-width: 650px) {

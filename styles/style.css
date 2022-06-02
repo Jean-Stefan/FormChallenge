@@ -17,12 +17,18 @@ body {
 }
 
 .container {
-    max-width: 620px;
+    width: 620px;
     min-height: 760px;
     padding: 30px 60px 75px 45px;
     background: #ffffff;
     border-radius: 20px;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+#main-content {
+    display: none;
 }
 
 .title img {
@@ -143,6 +149,32 @@ body {
     color: #0dbdbd;
     background: #ffffff;
     border: 2px solid #0dbdbd;
+}
+
+.success-title img {
+    margin: 0 auto 55px auto;
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.success-title h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Inter';
+    margin-bottom: 160px;
+}
+
+.button-back {
+    width: 270px;
+    height: 175px;
+    font-family: 'Nunito';
+    font-size: 36px;
+    color: #ffffff;
+    background: #0dbdbd;
+    border-radius: 10px;
+    border-color: transparent;
+    cursor: pointer;
 }
 
 @media (max-width: 650px) {

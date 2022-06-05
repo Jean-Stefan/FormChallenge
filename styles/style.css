@@ -18,10 +18,14 @@ body {
 
 .container {
     width: 620px;
+    min-height: 720px;
     padding: 20px 60px 60px 45px;
     background: #ffffff;
     border-radius: 20px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .main-content,
@@ -150,6 +154,10 @@ body {
     border: 2px solid #0dbdbd;
 }
 
+.success-title {
+    margin-bottom: 100px;
+}
+
 .success-title img {
     margin: 0 auto 55px auto;
     display: block;
@@ -161,7 +169,6 @@ body {
     text-align: center;
     font-size: 40px;
     font-family: 'Inter';
-    margin-bottom: 160px;
 }
 
 .button-container {
@@ -182,7 +189,8 @@ body {
 }
 
 .active {
-    display: unset;
+    display: flex;
+    flex-direction: column;
 }
 
 @media (max-width: 650px) {
@@ -191,6 +199,7 @@ body {
     }
 
     .container {
+        min-height: unset;
         margin: 0px;
         padding: 20px;
         border-radius: 0px;
@@ -241,6 +250,10 @@ body {
 
     /* Success Screen*/
 
+    .success-title {
+        margin-bottom: 55px;
+    }
+
     .success-title img {
         margin: 0 auto 35px auto;
         display: block;
@@ -252,7 +265,6 @@ body {
         text-align: center;
         font-size: 40px;
         font-family: 'Inter';
-        margin-bottom: 55px;
     }
 
     .button-back {

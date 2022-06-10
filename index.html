@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Nunito&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./styles/style.css" type="text/css">
+	<script src="./scripts/script.js" defer></script>
+	<title>Intern Sign Up</title>
+</head>
+
+<body>
+	<div class="container">
+		<div id="main-content" class="main-content active">
+			<header class="title">
+				<img src="assets/logo.png" alt="">
+				<h1>Intern Sign Up</h1>
+			</header>
+			<main class="content">
+				<form class="form" method="post">
+					<div class="group-full-name">
+						<label for="fullname">Full Name *</label>
+						<input type="text" name="fullname" id="fullname" placeholder="Name">
+					</div>
+					<div class="col-1">
+						<div class="group-email">
+							<label for="email">Email *</label>
+							<input type="email" name="email" id="email" placeholder="foo@bar.com">
+						</div>
+						<div class="group-password">
+							<label for="password">Password *</label>
+							<input type="password" name="password" id="password">
+						</div>
+					</div>
+					<div class="col-2">
+						<div class="group-phone">
+							<label for="phone">Phone</label>
+							<input type="tel" name="phone" id="phone" placeholder="(83) 000000-0000">
+						</div>
+						<div class="group-birthday">
+							<label for="birthday">Birthday *</label>
+							<input type="date" name="birthday" id="birthday">
+						</div>
+					</div>
+					<div class="group-checkbox">
+						<label for="checkbox" class="custom-checkbox">
+							<input type="checkbox" name="checkbox" id="checkbox">
+							<span class="checkmark"></span>
+							<span class="terms">I accept the terms and privacy</span>
+						</label>
+						<button class="button-register" type="submit">Register</button>
+					</div>
+				</form>
+			</main>
+		</div>
+		<div id="success" class="success">
+			<header class="success-title">
+				<img src="assets/logo.png" alt="">
+				<h1>Success!</h1>
+			</header>
+			<main>
+				<div class="button-container">
+					<button class="button-back">Go Back!</button>
+					<div>
+			</main>
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e5e5e5;
+}
+
+.container {
+    width: 620px;
+    min-height: 720px;
+    padding: 20px 60px 60px 45px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-content,
+.success {
+    display: none;
+}
+
+.title img {
+    margin: 0 auto 15px auto;
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.title h1 {
+    text-align: center;
+    font-size: 38px;
+    font-family: 'Inter';
+    margin-bottom: 30px;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 25px;
+}
+
+.form label {
+    display: block;
+    font-family: 'Nunito';
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.form input {
+    height: 40px;
+    padding: 12px;
+    font-family: 'Nunito';
+    font-size: 18px;
+    border: 2px solid #aaaaaa;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.group-full-name {
+    grid-column: 1/-1;
+    margin-bottom: 50px;
+}
+
+.col-1 {
+    grid-column: 1/2;
+}
+
+.group-email {
+    margin-bottom: 40px;
+}
+
+.col-2 {
+    grid-column: 2/3;
+    margin-bottom: 100px;
+}
+
+.group-phone {
+    margin-bottom: 40px;
+}
+
+.group-checkbox {
+    grid-column: 1/-1;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    justify-content: space-between;
+}
+
+.group-checkbox .custom-checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.custom-checkbox .checkmark {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #a5a5a5;
+    display: inline-block;
+    border-radius: 2px;
+    background: #ffffff
+        url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/1200px-White_check.svg.png)
+        center/1250% no-repeat;
+}
+
+.custom-checkbox input:checked + .checkmark {
+    background-color: #0dbdbd;
+    border-color: #0dbdbd;
+    background-size: 60%;
+}
+
+.custom-checkbox input {
+    display: none;
+}
+
+.custom-checkbox .terms {
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.button-register {
+    grid-column: 2/3;
+    justify-self: flex-end;
+    width: 80px;
+    height: 40px;
+    font-family: 'Nunito';
+    font-size: 16px;
+    color: #ffffff;
+    background: #0dbdbd;
+    border-radius: 10px;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.button-register:active {
+    color: #0dbdbd;
+    background: #ffffff;
+    border: 2px solid #0dbdbd;
+}
+
+.success-title {
+    margin-bottom: 100px;
+}
+
+.success-title img {
+    margin: 0 auto 55px auto;
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.success-title h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Inter';
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-back {
+    width: 270px;
+    height: 175px;
+    font-family: 'Nunito';
+    font-size: 36px;
+    color: #ffffff;
+    background: #0dbdbd;
+    border-radius: 10px;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.active {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 650px) {
+    body {
+        background: #ffffff;
+    }
+
+    .container {
+        min-height: unset;
+        margin: 0px;
+        padding: 20px;
+        border-radius: 0px;
+    }
+
+    .form {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .col-1,
+    .group-checkbox {
+        grid-column: 1/-1;
+    }
+
+    .col-2 {
+        grid-column: 1/-1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin-bottom: 0px;
+    }
+
+    .group-full-name {
+        margin-bottom: 0px;
+    }
+
+    .group-email,
+    .group-phone {
+        margin-bottom: 20px;
+    }
+
+    .group-checkbox {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form .custom-checkbox {
+        margin-bottom: 35px;
+    }
+
+    .button-register {
+        width: 100%;
+        height: 55px;
+        font-size: 18px;
+    }
+
+    /* Success Screen*/
+
+    .success-title {
+        margin-bottom: 55px;
+    }
+
+    .success-title img {
+        margin: 0 auto 35px auto;
+        display: block;
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    .success-title h1 {
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Inter';
+    }
+
+    .button-back {
+        width: 100%;
+        height: 75px;
+        font-family: 'Nunito';
+        font-size: 36px;
+        color: #ffffff;
+        background: #0dbdbd;
+        border-radius: 10px;
+        border-color: transparent;
+        cursor: pointer;
+    }
+}
+
+@media (max-height: 730px) and (max-width: 650px) {
+    .container {
+        padding: 10px 20px;
+    }
+
+    .title img {
+        margin-bottom: 5px;
+    }
+
+    .title h1 {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .form {
+        gap: 10px;
+    }
+
+    .group-email {
+        margin-bottom: 10px;
+    }
+}
